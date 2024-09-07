@@ -2,6 +2,7 @@
 let screenTitle = document.getElementById('title');
 const screenInput = document.getElementById('input');
 const screenNext = document.getElementById('next');
+const firstDiv = document.getElementById('first-div');
 const infoArray = [];
 const data = ['name', 'age', 'gender', 'description'];
 if (screenTitle) {
@@ -22,4 +23,29 @@ screenNext === null || screenNext === void 0 ? void 0 : screenNext.addEventListe
     }
     currentIndex++;
     console.log('info...', infoArray);
+    if (currentIndex === data.length + 1) {
+        buildCV();
+    }
 });
+function buildCV() {
+    const cvContainer = document.createElement('div');
+    cvContainer.className = 'cv-container';
+    const header = document.createElement('h2');
+    header.innerText = "RESUME BUILDER";
+    const paragraph = document.createElement('p');
+    paragraph.innerText = `Name: ${infoArray[0]}\n
+                            Age: ${infoArray[1]}\n
+                            Gender: ${infoArray[2]}\n
+                            Description: ${infoArray[3]}
+                            `;
+    // cvContainer.appendChild(header);
+    // cvContainer.appendChild(paragraph);
+    if (firstDiv !== null) {
+        firstDiv.innerText = "";
+        firstDiv.appendChild(header);
+        firstDiv.appendChild(paragraph);
+    }
+    else {
+        console.error('First div does not exist.');
+    }
+}
