@@ -1,3 +1,55 @@
-h1 {
-    background-color: red
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.first-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    /* background-color: red; */
+}
+
+.second-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    width: 20px;
+    border: 0px;
+    background-color: transparent;
+    margin-left: 5px;
+}
+
+.fas {
+    background-color: gray;
+    padding: 5px;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.fas:hover {
+    /* font-size: 30px; */
+    transition: all;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+. h1 {
+    /* background-color: red */
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid silver
 }
