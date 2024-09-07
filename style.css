@@ -40,9 +40,8 @@ button {
     cursor: pointer;
 }
 
-. h1 {
-    /* background-color: red */
-}
+/* . h1 {
+} */
 
 input {
     display: flex;
