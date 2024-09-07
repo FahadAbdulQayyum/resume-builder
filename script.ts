@@ -1,4 +1,3 @@
-const fs = require('fs');
 
 let screenTitle: HTMLElement | null = document.getElementById('title');
 const screenInput = document.getElementById('input') as HTMLInputElement | null;
