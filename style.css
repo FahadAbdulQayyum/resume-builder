@@ -12,6 +12,16 @@
     /* background-color: red; */
 }
 
+.first-divv {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    height: 100vh;
+    background-color: aqua;
+}
+
+
 .second-div {
     display: flex;
     justify-content: center;

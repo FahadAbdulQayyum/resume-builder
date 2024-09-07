@@ -1,4 +1,5 @@
 "use strict";
+const fs = require('fs');
 let screenTitle = document.getElementById('title');
 const screenInput = document.getElementById('input');
 const screenNext = document.getElementById('next');
@@ -44,6 +45,8 @@ function buildCV() {
         firstDiv.innerText = "";
         firstDiv.appendChild(header);
         firstDiv.appendChild(paragraph);
+        firstDiv.className = "first-divv";
+        firstDiv.style.backgroundColor = "orange";
     }
     else {
         console.error('First div does not exist.');

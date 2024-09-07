@@ -1,0 +1,8 @@
+{
+  "main":"./dist/read_write.js",
+  "module": "commonjs",
+
+  "devDependencies": {
+    "@types/node": "^22.5.4"
+  }
+}

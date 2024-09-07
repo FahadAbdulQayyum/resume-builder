@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 let screenTitle: HTMLElement | null = document.getElementById('title');
 const screenInput = document.getElementById('input') as HTMLInputElement | null;
 const screenNext: HTMLElement | null = document.getElementById('next');
@@ -51,7 +53,10 @@ function buildCV(){
         firstDiv.innerText = ""
         firstDiv.appendChild(header);
         firstDiv.appendChild(paragraph);
+        firstDiv.className = "first-divv"
+        firstDiv.style.backgroundColor = "orange";
     }else {
         console.error('First div does not exist.')
     }
 }
+
