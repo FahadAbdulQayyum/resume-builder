@@ -15,6 +15,9 @@ const express = require('express');
 const app = express();
 const PORT = 4000 || process.env.PORT;
 app.get("/", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    return res.send("Hello! Man.");
+}));
+app.get("/data", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     // return res.text("Hello");
     // res.send("Hellos");
     // return res.json({msg:"Hello World"});
@@ -72,3 +75,4 @@ function readData() {
 }
 // saveData("Hello")
 readData();
+module.exports = app;

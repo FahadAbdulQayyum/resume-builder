@@ -7,6 +7,10 @@ const app = express();
 const PORT = 4000 || process.env.PORT;
 
 app.get("/", async (req: Request, res: Response) => {
+    return res.send("Hello! Man.")
+})
+
+app.get("/data", async (req: Request, res: Response) => {
     // return res.text("Hello");
     // res.send("Hellos");
     // return res.json({msg:"Hello World"});
@@ -67,3 +71,5 @@ function readData(): Promise<any>{
 // saveData("Hello")
 
 readData()
+
+module.exports = app

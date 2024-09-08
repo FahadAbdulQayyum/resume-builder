@@ -1,8 +1,19 @@
 {
-  "main":"./dist/read_write.js",
+  "main": "./dist/read_write.js",
   "module": "commonjs",
-
   "devDependencies": {
     "@types/node": "^22.5.4"
-  }
+  },
+  "name": "1",
+  "version": "1.0.0",
+  "dependencies": {
+    "undici-types": "^6.19.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

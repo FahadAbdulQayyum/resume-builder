@@ -2,13 +2,19 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon ./dist/index.js",
+    "build":"npx tsc",
+    "run": "nodemon ./dist/index.js",
+    "start": "node ./dist/index.js",
+    "start:prod": "NODE_ENV=production node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "@types/express": "github:types/express",
     "express": "^4.19.2"
