@@ -31,3 +31,7 @@ function readData(){
 // saveData("Hello")
 
 readData()
+
+function printResume(){
+    
+}
