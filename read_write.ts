@@ -32,6 +32,6 @@ function readData(){
 
 readData()
 
-function printResume(){
+function printResume(data: any){
     // This function will print the resume
 }
