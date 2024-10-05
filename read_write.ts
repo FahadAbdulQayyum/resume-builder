@@ -34,4 +34,5 @@ readData()
 
 function printResume(data: any){
     // This function will print the resume
+    const {firstName, lastName} = data
 }
