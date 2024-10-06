@@ -32,6 +32,7 @@ function readData(){
 
 readData()
 
+// Needs to specified the ":any" in future or may be now.
 function printResume(data: any){
     // This function will print the resume
     const {firstName, lastName, age} = data
